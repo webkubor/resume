@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite ",
     "type-check": "vue-tsc --noEmit",
     "build": "vite build",
+    "screenshot": "node ./screenshot.js",
+    "pdf": "node ./pdf.js",
     "preview": "vite preview"
   },
   "dependencies": {
