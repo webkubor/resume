@@ -8,7 +8,7 @@ import puppeteer from 'puppeteer';
   await page.emulateMediaType('screen');  // 更新为 `emulateMediaType`
   console.log('获取成功,正在导出PDF....');
   await page.pdf({
-    path: 'public/resume.pdf',
+    path: 'dist/resume.pdf',
     printBackground: true,
     format: 'A4',
     scale: 0.7,
