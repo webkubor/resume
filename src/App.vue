@@ -1,0 +1,81 @@
+<template>
+  <div>
+    <p class="last-modified">最后更新于2022年1月</p>
+<a class="download-pdf" href="resume.pdf">下载 PDF</a>
+    <HeaderComponent
+      :name="name"
+      :jobTitle="jobTitle"
+      :gender="gender"
+      :birthdate="birthdate"
+      :university="university"
+      :degree="degree"
+      :graduationYear="graduationYear"
+      :experienceYears="experienceYears"
+      :contacts="contacts"
+    />
+    <ExperienceComponent :experiences="experiences" />
+    <ProjectComponent :projects="projects" />
+    <footer class="github-footer">
+  <a class="footer-link" href="https://web-kubor.gitee.io/resume/">页面托管在Gitee Pages上</a>
+</footer>
+  </div>
+</template>
+
+<script>
+import HeaderComponent from '@/components/HeaderComponent.vue';
+import ExperienceComponent from '@/components/ExperienceComponent.vue';
+import ProjectComponent from '@/components/ProjectComponent.vue';
+
+export default {
+  components: {
+    HeaderComponent,
+    ExperienceComponent,
+    ProjectComponent
+  },
+  data() {
+    return {
+      name: '王恩博',
+      jobTitle: '前端开发工程师',
+      gender: '男',
+      birthdate: '1995.11.13',
+      university: '天津城建大学',
+      degree: '本科',
+      graduationYear: '2018',
+      experienceYears: 4,
+      contacts: [
+        { text: '我的技术博客', href: 'https://www.yuque.com/webkubor/blog', icon: '<svg width="16px" height="16px" viewBox="0 0 1024 1024"><path d="M512 42.581333l-469.333333 469.333333 31.146667 31.146667L170.666667 446.250667l0 438.186667 682.666667 0L853.333333 446.208l96.853333 96.896 31.146667-31.146667L512 42.581333zM426.666667 841.770667l0-298.666667 170.666667 0 0 298.666667L426.666667 841.770667zM810.666667 841.770667l-170.666667 0 0-341.333333L384 500.437333l0 341.333333L213.333333 841.770667 213.333333 403.584l298.666667-298.666667 298.666667 298.666667L810.666667 841.770667z"></path></svg>' },
+        { text: 'Github - webkubor', href: 'https://github.com/web-kubor', icon: '<svg width="16px" height="16px" viewBox="0 0 1024 1024"><path d="M941.714 512q0 143.433-83.712 258.011t-216.283 158.574q-15.433 2.853-22.565-3.986t-7.131-17.152v-120.576q0-55.442-29.696-81.152 32.585-3.438 58.587-10.277t53.723-22.272 46.299-37.998 30.281-60.014 11.703-86.016q0-69.157-45.129-117.723 21.138-52.005-4.571-116.553-16.018-5.157-46.299 6.29t-52.553 25.161l-21.723 13.714q-53.138-14.848-109.714-14.848t-109.714 14.848q-9.143-6.29-24.283-15.433t-47.726-22.016-49.152-7.717q-25.161 64.585-3.986 116.553-45.129 48.567-45.129 117.723 0 48.567 11.703 85.723t29.989 60.014 46.007 38.29 53.723 22.272 58.587 10.277q-22.857 20.553-28.014 58.843-11.995 5.705-25.71 8.558t-32.585 2.853-37.413-12.288-31.707-35.73q-10.862-18.286-27.721-29.696t-28.27-13.714l-11.447-1.719q-11.995 0-16.567 2.56t-2.853 6.583 5.157 8.009 7.424 6.839l3.986"></path></svg>' }
+      ],
+      experiences: [
+        {
+          company: '某某公司',
+          period: '2020年-至今',
+          type: '前端开发工程师',
+          description: '负责公司网站的前端开发工作，涉及技术包括Vue.js、React等'
+        },
+        // 其他经历
+      ],
+      projects: [
+        {
+          name: '项目名称',
+          period: '2021年',
+          description: '该项目主要负责...',
+          link: 'https://example.com',
+          moreText: '更多',
+          details: [
+            '使用技术',
+            '项目挑战',
+            '解决方案'
+          ],
+          moreLink: 'https://example.com/more-info'
+        },
+        // 其他项目
+      ]
+    };
+  }
+}
+</script>
+
+<style lang="scss" > 
+@import "@/styles/index.scss"; 
+</style>
