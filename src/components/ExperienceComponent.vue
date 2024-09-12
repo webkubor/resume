@@ -9,9 +9,10 @@
       <div class="section-bd">
         <div class="item" v-for="(item, index) in experiences" :key="index">
           <header class="item-hd">
-            <h3 class="item-name">{{ item.company }}</h3>
-            <span class="item-time">{{ item.period }}</span>
-            <span class="btn item-more">{{ item.type }}</span>
+            <h3 class="item-name company">{{ item.company }}</h3>
+            <span class="item-time time">{{ item.time }}</span>
+            <span class="item-time position">{{ item.position }}</span>
+            <span class="btn item-more">{{ item.industry }} </span>
           </header>
           <div class="item-bd">
             <p class="item-des">简介: {{ item.description }}</p>

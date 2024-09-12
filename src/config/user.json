@@ -6,7 +6,8 @@
   "university": "天津城建大学",
   "degree": "本科",
   "graduationYear": "2018",
-  "experienceYears": 4,
+  "repository": "https://github.com/webkubor/resume",
+  "pdf":"https://github.com/webkubor/resume/raw/master/public/resume.pdf",
   "contacts": [
     {
       "text": "我的技术博客",
@@ -23,20 +24,30 @@
     {
       "company": "杭州源圈科技有限公司",
       "time": "2018.6 - 2020.5",
+      "position": "前端开发工程师/node微服务",
       "industry": "O2O电商",
       "description": "简介: 美妆医疗电商平台，与国内外多品牌美妆合作，打造国内美妆电商平台的科技公司"
     },
     {
       "company": "杭州优海信息有限公司",
       "time": "2020.5 - 2021.4",
+      "position": "优麦项目组前端负责人",
       "industry": "sass工业",
       "description": "简介: 优海信息致力于成为智能制造系统解决方案供应商，现有ERP、MES、APS、W-VR（工厂虚拟现实3D交互系统）四大核心产品，公司承建的数字化工厂项目被评为杭州市工厂物联网和工业互联网示范样板项目。"
     },
     {
       "company": "北京银承库有限公司(杭州分公司)",
-      "time": "2021.4 - 至今",
-      "industry": "金融-区块链",
+      "time": "2021.4 - 2022.3",
+      "industry": "金融/区块链",
+      "position": "海外事业创新部/前端负责人/区块链开发员/Dapp 开发负责人",
       "description": "简介: 一家从事互联网综合票据金融服务的公司，公司以银行承兑汇票为切入点，为企业提供支付、理财、融资于一体的企业票据综合金融服务。公司业务已占70%以上市场份额，获得IDG Capital Partners，中泽嘉盟股权基金，华创资本的B轮融资。"
+    },
+    {
+      "company": "杭州超对称有限公司",
+      "time": "2022.3 - 至今",
+      "industry": "海外,区块链,金融",
+      "position": "前端负责人",
+      "description": "简介: 主要做海外支付类业务(稳定币和法币)自研收银台, 目前已支持越南,孟加拉,印度,印尼,泰国,菲律宾等海外市场, 支持十余个国家."
     }
   ],
   "projects": [
