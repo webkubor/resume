@@ -99,8 +99,8 @@ a {
   .title {
     width: 100%;
     border-bottom: 2px solid darken($color-blue, 2%);
-    font-size: 52px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 500;
     overflow: hidden;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -188,6 +188,7 @@ a {
       
       & > li {
         height: 22px;
+        text-align: left;
         
         @media screen and (max-width: 720px) {
           display: inline-block;
