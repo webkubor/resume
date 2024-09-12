@@ -9,7 +9,8 @@
     "build": "vite build",
     "screenshot": "node ./screenshot.js",
     "pdf": "node ./pdf.js",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "sh ./deploy.sh"
   },
   "dependencies": {
     "puppeteer": "^23.3.0",

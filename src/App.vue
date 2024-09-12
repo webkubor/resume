@@ -1,7 +1,9 @@
 <template>
   <div>
     <p class="last-modified">最后更新于2022年1月</p>
-    <a class="download-pdf" href="./resume.pdf">下载 PDF</a>
+    <a class="download-pdf" href="/resume.pdf">下载 PDF</a>
+  </div>
+   
     <HeaderComponent
       :name="dataRef.name"
       :jobTitle="dataRef.jobTitle"
@@ -17,7 +19,6 @@
     <footer class="github-footer">
       <a class="footer-link" href="https://web-kubor.gitee.io/resume/">页面托管在Gitee Pages上</a>
     </footer>
-  </div>
 </template>
 
 <script setup>
