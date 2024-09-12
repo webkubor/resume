@@ -3,8 +3,6 @@ $color-green: #00b38a;
 $color-blue: #1B4A9A; // Fixed duplicate definition
 $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
-
-
 body,html {
   padding: 0;
   margin: 0;
@@ -47,26 +45,21 @@ a {
   color: $color-blue;
   transition: all .2s ease-in-out;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 .practice,.project{
   padding: 0 20px;
 }
 
-.last-modified,
-.download-pdf {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  color: #bbb;
-  margin-left: -500px;
+.last-modified,.footer-link {
   font-size: 12px;
-  text-align: right;
-  
   @media screen and (max-width: 1024px) {
-    display: none;
+    // display: none;
   }
-  
   @media print {
     display: none;
   }

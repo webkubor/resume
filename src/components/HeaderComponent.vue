@@ -3,6 +3,7 @@
       <section class="title">
         <div class="name">
           <h1>{{ name }}</h1>
+          <span class="last-modified">最后更新于{{ lastUpdated }}</span>
         </div>
         <div class="job">
           <h2>{{ jobTitle }}</h2>
@@ -29,11 +30,12 @@
     </header>
   </template>
   
-  <script>
-  export default {
-    name: 'HeaderComponent',
-    props: {
-      name: String,
+  <script setup>
+import { ref, onMounted } from 'vue';
+const lastUpdated = ref(null);
+
+  defineProps({
+    name: String,
       jobTitle: String,
       gender: String,
       birthdate: String,
@@ -42,7 +44,28 @@
       graduationYear: String,
       experienceYears: Number,
       contacts: Array
-    }
-  }
+  })
+
+
+  onMounted(() => {
+  fetchGit()
+})
+
+
+
+
+
+function fetchGit() {
+  const repo = "webkubor/resume"; 
+  const url = `https://api.github.com/repos/${repo}/commits`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      lastUpdated.value = data[0].commit.committer.date
+    })
+    .catch(error => {
+      console.error('Error fetching GitHub commits:', error);
+    });
+}
   </script>
   
