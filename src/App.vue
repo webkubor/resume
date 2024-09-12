@@ -23,14 +23,11 @@ import data from '@/config/user.json'; // 导入 JSON 文件
 import faviconUrl from "@/assets/favicon.ico"
 const dataRef = ref(data); // 使用 JSON 数据
 document.title = dataRef.value.name +'- 个人简历'
-
 setWebsiteLogo(faviconUrl)
-function onDown() {
-  let repository = dataRef.value.repository
-  let url =  repository +  '/raw/master/public/resume.pdf'
-}
-
-
+// function onDown() {
+//   let repository = dataRef.value.repository
+//   let url =  repository +  '/raw/master/public/resume.pdf'
+// }
 function setWebsiteLogo(faviconUrl) {
   var link =
     document.querySelector("link[rel*='icon']") ||
@@ -45,4 +42,3 @@ function setWebsiteLogo(faviconUrl) {
   document.getElementsByTagName("head")[0].appendChild(link);
 }
 </script>
-

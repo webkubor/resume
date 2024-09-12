@@ -15,20 +15,6 @@ header {
   box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 
 body {
   color: #333;
@@ -356,19 +342,7 @@ a,
       }
     }
 
-    .time {
-      color: orange;
-    }
-
-    .position {
-      color: darken($color-blue, 2%);
-      margin: 0 5px;
-    }
-
-    .company {
-      color: $color-blue;
-    }
-
+ 
     .item-more {
       position: absolute;
       top: 10px;

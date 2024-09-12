@@ -1,16 +1,16 @@
 <template>
     <section class="skill">
-      <header class="section-hd">
+      <div class="section-hd">
         <span class="section-title-l"></span>
         <h2 class="section-title">优势</h2>
         <span class="section-title-r"></span>
-      </header>
+     </div>
       <div class="section-bd">
         <!--优势-->
         <div class="item">
-          <header class="item-hd">
+          <div class="item-hd">
             <span class="item-time">{{advantages.title}}</span>
-          </header>
+         </div>
           <div class="item-bd">
             <ul class="section-content">
               <li v-for="(advantage, index) in advantages.points" :key="index">

@@ -1,6 +1,6 @@
 <!-- 自我介绍 -->
 <template>
-    <header class="content-hd">
+    <div class="content-hd">
       <section class="title">
         <div class="name">
           <h1>{{ User.name }}</h1>
@@ -28,7 +28,7 @@
           </li>
         </ul>
       </section>
-    </header>
+   </div>
   </template>
   
   <script setup>
