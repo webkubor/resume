@@ -27,13 +27,13 @@
   export default {
     props: {
       data: {
-        type: Array,
+        type: Object,
         required: true
       }
     },
     computed: {
       advantages() {
-        return this.data || [];
+        return this.data || {};
       }
     }
   };
