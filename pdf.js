@@ -11,12 +11,12 @@ import puppeteer from 'puppeteer';
     path: 'public/resume.pdf',
     printBackground: true,
     format: 'A4',
-    scale: 0.7,
+    scale: 0.8,
     margin: {
-      top: '20px',
-      left: '20px',
-      bottom: '20px',
-      right: '20px'
+      top: '0px',
+      left: '0px',
+      bottom: '0px',
+      right: '0px'
     }
   }); // create a PDF
   await browser.close();
