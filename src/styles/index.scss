@@ -46,11 +46,13 @@ a {
 }
 .footer {
   display: flex;
+  padding: 0 20px;
+  font-size: 14px;
   justify-content: space-between;
 }
 
 
-.practice,.project{
+.practice,.project,  .skill{
   padding: 0 20px;
 }
 
