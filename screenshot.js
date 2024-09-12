@@ -5,7 +5,7 @@ import puppeteer from 'puppeteer';
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 }); // PC端
   console.log('开始前往网站....')
-  await page.goto('http://localhost:5173/resume/',  {
+  await page.goto('https://webkubor.github.io/resume',  {
     timeout: 0 //传0则为无限等待，直到加载渲染完毕
   });
   console.log('网站渲染完毕....')
